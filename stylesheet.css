@@ -358,3 +358,18 @@ section{
 .typed-cursor{
     color: #00e5ff;
 }
+
+@media (max-width: 768px) {
+
+    .home,
+    .about,
+    .skills,
+    .projects,
+    .certificates,
+    .contact {
+        min-height: auto;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+}
