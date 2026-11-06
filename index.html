@@ -1,407 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Dharmendra Chaurasiya - MERN Stack Developer and aspiring Software Engineer from Kanpur.">
     <title>Dharmendra Chaurasiya | Portfolio</title>
 
     <link rel="stylesheet" href="stylesheet.css">
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- HEADER -->
-
     <header class="header">
+        <a href="#home" class="logo">Dharmendra Chaurasiya</a>
 
-        <a href="#home" class="logo">
-            Dharmendra Chaurasiya
-        </a>
+        <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false">
+            <i class="bx bx-menu"></i>
+        </button>
 
-        <nav class="navbar">
-
+        <nav class="navbar" id="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#certificates">Certificates</a>
             <a href="#contact">Contact</a>
-
         </nav>
-
     </header>
 
     <!-- HOME -->
-
     <section class="home" id="home">
-
         <div class="home-content">
-
             <h3>Hello, It's Me</h3>
-
             <h1>Dharmendra Chaurasiya</h1>
-
-            <h3>
-                And I'm a
-                <span class="multiple-text"></span>
-            </h3>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
 
             <p>
-
                 Aspiring Software Engineer and MERN Stack Developer.
-                Passionate about building scalable web applications,
-                AI-powered systems and solving Data Structures &
-                Algorithms using C++.
-
+                I build scalable web applications and AI-powered systems,
+                and I solve Data Structures &amp; Algorithms problems in C++.
             </p>
 
             <div class="social-icons">
-
-                <a href="https://github.com/ChaurasiyaDharmendra" target="_blank">
-                    <i class='bx bxl-github'></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/dharmendra-chaurasiya-46790b31b/" target="_blank">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-
-                <a href="https://www.instagram.com/dharmendra_chaurasiya_dk/" target="_blank">
-                    <i class='bx bxl-instagram'></i>
-                </a>
-
-                <a href="mailto:golu78dk@gmail.com">
-                    <i class='bx bx-envelope'></i>
-                </a>
-
+                <a href="https://github.com/ChaurasiyaDharmendra" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/dharmendra-chaurasiya-46790b31b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.instagram.com/dharmendra_chaurasiya_dk/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="mailto:golu78dk@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
             </div>
 
             <div class="btn-group">
-
-                <a href="assets/resume.pdf" class="btn" download>
-                    Download Resume
-                </a>
-
-                <a href="#contact" class="btn">
-                    Contact Me
-                </a>
-
+                <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
             </div>
-
         </div>
 
         <div class="home-img">
-
-            <img src="images/profile.png" alt="Profile">
-
+            <img src="images/profile.png" alt="Dharmendra Chaurasiya">
         </div>
-
     </section>
 
     <!-- ABOUT -->
-
     <section class="about" id="about">
+        <h2 class="heading">About Me</h2>
 
-        <h2 class="heading">
-            About Me
-        </h2>
+        <div class="about-wrap">
+            <div class="about-content">
+                <h3>MERN Stack Developer</h3>
+                <p>
+                    I am Dharmendra Chaurasiya, a B.Tech Information Technology student
+                    at Chhatrapati Shahu Ji Maharaj University, Kanpur.
+                </p>
+                <p>
+                    I work on full stack web development with MongoDB, Express.js,
+                    React.js and Node.js. I enjoy solving DSA problems, learning new
+                    technologies and building AI-powered applications.
+                </p>
+                <p>
+                    My goal is to become a Software Engineer and contribute to products
+                    that solve real-world problems.
+                </p>
+            </div>
 
-        <div class="about-content">
-
-            <h3>MERN Stack Developer</h3>
-
-            <p>
-
-                I am Dharmendra Chaurasiya,
-                a B.Tech Information Technology student
-                at Chhatrapati Shahu Ji Maharaj University, Kanpur.
-
-                I specialize in Full Stack Web Development using
-                MongoDB, Express.js, React.js and Node.js.
-
-                I enjoy solving Data Structures & Algorithms problems,
-                learning new technologies and building AI-powered applications.
-
-                My goal is to become a Software Engineer and contribute
-                to impactful products that solve real-world problems.
-
-            </p>
-
+            <div class="about-side">
+                <div class="info-card">
+                    <i class="bx bxs-graduation"></i>
+                    <div>
+                        <h4>B.Tech in Information Technology</h4>
+                        <p>Chhatrapati Shahu Ji Maharaj University, Kanpur</p>
+                        <span>2023 - 2027</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="bx bx-map"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Kanpur, Uttar Pradesh, India</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
 
     <!-- SKILLS -->
-
     <section class="skills" id="skills">
-
         <h2 class="heading">Skills</h2>
 
-        <div class="skills-container">
+        <div class="skills-grid">
 
-            <div class="skill-box">HTML</div>
-            <div class="skill-box">CSS</div>
-            <div class="skill-box">JavaScript</div>
-            <div class="skill-box">Bootstrap</div>
+            <div class="skill-group">
+                <h3><i class="bx bx-code-alt"></i> Frontend</h3>
+                <div class="chips">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React.js</span>
+                    <span>Bootstrap</span>
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
 
-            <div class="skill-box">React.js</div>
-            <div class="skill-box">Node.js</div>
-            <div class="skill-box">Express.js</div>
-            <div class="skill-box">MongoDB</div>
+            <div class="skill-group">
+                <h3><i class="bx bx-server"></i> Backend</h3>
+                <div class="chips">
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>REST APIs</span>
+                    <span>Middleware</span>
+                    <span>JWT Authentication</span>
+                </div>
+            </div>
 
-            <div class="skill-box">SQL</div>
-            <div class="skill-box">C</div>
-            <div class="skill-box">C++</div>
-            <div class="skill-box">Python</div>
+            <div class="skill-group">
+                <h3><i class="bx bx-data"></i> Database</h3>
+                <div class="chips">
+                    <span>MongoDB</span>
+                    <span>SQL</span>
+                </div>
+            </div>
 
-            <div class="skill-box">Git</div>
-            <div class="skill-box">GitHub</div>
-            <div class="skill-box">DSA</div>
-            <div class="skill-box">OOPs</div>
+            <div class="skill-group">
+                <h3><i class="bx bx-terminal"></i> Languages</h3>
+                <div class="chips">
+                    <span>C++</span>
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3><i class="bx bx-wrench"></i> Tools &amp; Deployment</h3>
+                <div class="chips">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Vercel</span>
+                    <span>Render</span>
+                    <span>AI Tools</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3><i class="bx bx-cloud"></i> DevOps (Basic)</h3>
+                <div class="chips">
+                    <span>Docker</span>
+                    <span>CI/CD</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3><i class="bx bx-brain"></i> Core CS</h3>
+                <div class="chips">
+                    <span>Data Structures &amp; Algorithms</span>
+                    <span>OOP</span>
+                </div>
+            </div>
 
         </div>
-
     </section>
 
-        <!-- PROJECTS -->
+    <!-- EXPERIENCE -->
+    <section class="experience" id="experience">
+        <h2 class="heading">Experience</h2>
 
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <span class="date">Aug 2026 - Present</span>
+                    <h3>Infosys Springboard Virtual Internship 7.0</h3>
+                    <h4>Intern</h4>
+                    <ul>
+                        <li>Selected for the internship and working on a team-based project.</li>
+                        <li>Building an AI-Driven Environmental Impact Intelligence Platform for carbon tracking and sustainability optimization.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <span class="date">23 May 2026 - 23 Aug 2026</span>
+                    <h3>Web Development Intern</h3>
+                    <h4>Codevirus Security Pvt. Ltd., Lucknow</h4>
+                    <ul>
+                        <li>Worked on web projects covering frontend, backend, database integration and responsive interfaces.</li>
+                        <li>Built a security monitoring dashboard UI inspired by platforms like Splunk and Wazuh.</li>
+                        <li>Added and modified features, tested and debugged functionality, and maintained documentation.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
     <section class="projects" id="projects">
+        <h2 class="heading">My Projects</h2>
 
-        <h2 class="heading">
-            My Projects
-        </h2>
+        <div class="projects-grid">
 
-        <!-- SMARTVOICE -->
+            <!-- EVENTORA -->
+            <article class="project-card">
+                <div class="project-top">
+                    <i class="bx bx-calendar-event"></i>
+                    <h3>Eventora</h3>
+                    <p class="project-sub">Full-Stack MERN Event Booking Platform</p>
+                </div>
 
-        <div class="project-card">
+                <ul class="project-points">
+                    <li>JWT authentication with role-based access.</li>
+                    <li>Email OTP verification for registration and event booking.</li>
+                    <li>User and admin dashboards for events, ticket booking and approvals.</li>
+                    <li>RESTful APIs for event management and booking workflows.</li>
+                </ul>
 
-            <h3>SmartVoice AI Assistant</h3>
+                <div class="chips small">
+                    <span>React.js</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>MongoDB</span>
+                    <span>Tailwind CSS</span>
+                </div>
 
-            <div class="project-images">
+                <div class="project-buttons">
+                    <!-- TODO: apne Eventora ka live link yahan daalo -->
+                    <a href="https://eventora-mern-six.vercel.app/" target="_blank" rel="noopener" class="btn">Live Demo</a>
+                    <!-- TODO: apne Eventora repo ka link yahan daalo -->
+                    <a href="https://github.com/ChaurasiyaDharmendra/Eventora-MERN" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+                </div>
+            </article>
 
-                <img src="images/smartvoice-login.png" alt="">
-                <img src="images/smartvoice-avatar.png" alt="">
-                <img src="images/smartvoice-dashboard.png" alt="">
+            <!-- STOCKVERSE -->
+            <article class="project-card">
+                <div class="project-top">
+                    <i class="bx bx-line-chart"></i>
+                    <h3>StockVerse</h3>
+                    <p class="project-sub">Stock Trading Dashboard inspired by Zerodha</p>
+                </div>
 
-            </div>
+                <ul class="project-points">
+                    <li>Buy and sell orders with portfolio management.</li>
+                    <li>Dashboards for holdings, positions, funds and order history.</li>
+                    <li>Backend APIs for trade management and database operations.</li>
+                    <li>Authentication and responsive design.</li>
+                </ul>
 
-            <p>
+                <div class="chips small">
+                    <span>React.js</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>MongoDB</span>
+                    <span>Tailwind CSS</span>
+                </div>
 
-                AI-powered voice assistant supporting Hindi-English interaction.
+                <div class="project-buttons">
+                    <a href="https://stockverse-mern-5mxg.vercel.app" target="_blank" rel="noopener" class="btn">Live Demo</a>
+                    <a href="https://github.com/ChaurasiyaDharmendra" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+                </div>
+            </article>
 
-                Built using MERN Stack, JWT Authentication,
-                OpenRouter AI and Web Speech API.
+            <!-- SMARTVOICE -->
+            <article class="project-card">
+                <div class="project-top">
+                    <i class="bx bx-microphone"></i>
+                    <h3>SmartVoice AI Assistant</h3>
+                    <p class="project-sub">Hindi-English voice assistant</p>
+                </div>
 
-                Features include voice commands,
-                AI responses, authentication,
-                dark/light mode and responsive UI.
+                <ul class="project-points">
+                    <li>Voice commands and AI responses using OpenRouter AI and Web Speech API.</li>
+                    <li>JWT authentication.</li>
+                    <li>Dark/light mode and responsive UI.</li>
+                </ul>
 
-            </p>
+                <div class="chips small">
+                    <span>MERN Stack</span>
+                    <span>JWT</span>
+                    <span>OpenRouter AI</span>
+                    <span>Web Speech API</span>
+                </div>
 
-            <div class="project-buttons">
-
-                <a href="https://smart-voice-ai-assistant.vercel.app"
-                   target="_blank"
-                   class="btn">
-
-                    Live Demo
-
-                </a>
-
-                <a href="https://github.com/ChaurasiyaDharmendra"
-                   target="_blank"
-                   class="btn">
-
-                    GitHub
-
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- STOCKVERSE -->
-
-        <div class="project-card">
-
-            <h3>StockVerse Trading Dashboard</h3>
-
-            <div class="project-images">
-
-                <img src="images/stockverse-home.png" alt="">
-                <img src="images/stockverse-auth.png" alt="">
-                <img src="images/stockverse-dashboard.png" alt="">
-
-            </div>
-
-            <p>
-
-                Full Stack Stock Trading Dashboard inspired by Zerodha.
-
-                Includes portfolio tracking,
-                holdings management,
-                order placement,
-                authentication and responsive design.
-
-            </p>
-
-            <div class="project-buttons">
-
-                <a href="https://stockverse-mern-5mxg.vercel.app"
-                   target="_blank"
-                   class="btn">
-
-                    Live Demo
-
-                </a>
-
-                <a href="https://github.com/ChaurasiyaDharmendra"
-                   target="_blank"
-                   class="btn">
-
-                    GitHub
-
-                </a>
-
-            </div>
+                <div class="project-buttons">
+                    <a href="https://smart-voice-ai-assistant.vercel.app" target="_blank" rel="noopener" class="btn">Live Demo</a>
+                    <a href="https://github.com/ChaurasiyaDharmendra" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+                </div>
+            </article>
 
         </div>
+    </section>
 
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements" id="achievements">
+        <h2 class="heading">Achievements</h2>
+
+        <div class="achievement-grid">
+            <div class="achievement"><i class="bx bx-trophy"></i><p>Completed 150+ Google Cloud Arcade Labs and earned rewards (T-shirt &amp; swags).</p></div>
+            <div class="achievement"><i class="bx bxl-github"></i><p>Selected as ECWoC 2026 Contributor (Open Source Program).</p></div>
+            <div class="achievement"><i class="bx bx-chip"></i><p>NPTEL Certification: Introduction to Internet of Things (IIT Kharagpur).</p></div>
+            <div class="achievement"><i class="bx bx-shield-quarter"></i><p>Vocational Course in Cyber Security (CSJMU).</p></div>
+            <div class="achievement"><i class="bx bx-laptop"></i><p>Full Stack Web Development (MERN) - Apna College, Delta Batch.</p></div>
+        </div>
     </section>
 
     <!-- CERTIFICATES -->
-
     <section class="certificates" id="certificates">
-
-        <h2 class="heading">
-            Certificates
-        </h2>
+        <h2 class="heading">Certificates</h2>
 
         <div class="certificate-container">
-
-            <img src="images/certificate1.png" alt="Certificate 1">
-
-            <img src="images/certificate2.png" alt="Certificate 2">
-
-            <img src="images/certificate3.png" alt="Certificate 3">
-
+            <img src="images/certificate1.png" alt="Certificate 1" loading="lazy">
+            <img src="images/certificate2.png" alt="Certificate 2" loading="lazy">
+            <img src="images/certificate3.png" alt="Certificate 3" loading="lazy">
         </div>
-
     </section>
 
-        <!-- CONTACT -->
-
+    <!-- CONTACT -->
     <section class="contact" id="contact">
-
-        <h2 class="heading">
-            Contact Me
-        </h2>
+        <h2 class="heading">Contact Me</h2>
 
         <div class="contact-container">
-
             <div class="contact-box">
-
-                <i class='bx bx-envelope'></i>
-
+                <i class="bx bx-envelope"></i>
                 <h3>Email</h3>
-
-                <p>
-                    <a href="mailto:golu78dk@gmail.com">
-                        golu78dk@gmail.com
-                    </a>
-                </p>
-
+                <p><a href="mailto:golu78dk@gmail.com">golu78dk@gmail.com</a></p>
             </div>
 
             <div class="contact-box">
-
-                <i class='bx bx-phone'></i>
-
+                <i class="bx bx-phone"></i>
                 <h3>Phone</h3>
-
-                <p>
-                    +91 7887001253
-                </p>
-
+                <p><a href="tel:+917887001253">+91 7887001253</a></p>
             </div>
 
             <div class="contact-box">
-
-                <i class='bx bxl-linkedin'></i>
-
+                <i class="bx bxl-linkedin"></i>
                 <h3>LinkedIn</h3>
-
-                <p>
-
-                    <a href="https://www.linkedin.com/in/dharmendra-chaurasiya-46790b31b/"
-                       target="_blank">
-
-                        View Profile
-
-                    </a>
-
-                </p>
-
+                <p><a href="https://www.linkedin.com/in/dharmendra-chaurasiya-46790b31b/" target="_blank" rel="noopener">View Profile</a></p>
             </div>
 
             <div class="contact-box">
-
-                <i class='bx bxl-github'></i>
-
+                <i class="bx bxl-github"></i>
                 <h3>GitHub</h3>
-
-                <p>
-
-                    <a href="https://github.com/ChaurasiyaDharmendra"
-                       target="_blank">
-
-                        View GitHub
-
-                    </a>
-
-                </p>
-
+                <p><a href="https://github.com/ChaurasiyaDharmendra" target="_blank" rel="noopener">View GitHub</a></p>
             </div>
-
         </div>
-
     </section>
-
     <!-- FOOTER -->
-
     <footer class="footer">
-
-        <p>
-
-            © 2026 Dharmendra Chaurasiya
-
-        </p>
-
-        <p>
-
-            MERN Stack Developer | Software Engineer
-
-        </p>
-
-        <p>
-
-            Built with HTML, CSS & JavaScript
-
-        </p>
-
+        <p>&copy; 2026 Dharmendra Chaurasiya</p>
+        <p>MERN Stack Developer | Software Engineer</p>
+        <p>Built with HTML, CSS &amp; JavaScript</p>
     </footer>
 
-    <!-- TYPED JS -->
-
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <!-- MAIN JS -->
-
     <script src="main.js"></script>
-
 </body>
-
 </html>

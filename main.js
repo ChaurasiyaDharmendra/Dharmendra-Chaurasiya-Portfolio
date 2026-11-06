@@ -1,52 +1,50 @@
-// =========================
-// ACTIVE NAVBAR LINK
-// =========================
+// Typing effect
+if (typeof Typed !== 'undefined') {
+    new Typed('.multiple-text', {
+        strings: [
+            'MERN Stack Developer',
+            'Software Engineer',
+            'DSA Problem Solver',
+            'AI Tools Explorer'
+        ],
+        typeSpeed: 70,
+        backSpeed: 40,
+        backDelay: 1200,
+        loop: true
+    });
+}
 
-let sections = document.querySelectorAll("section");
-let navLinks = document.querySelectorAll(".navbar a");
+// Mobile menu
+const menuBtn = document.getElementById('menu-btn');
+const navbar = document.getElementById('navbar');
+const menuIcon = menuBtn.querySelector('i');
 
-window.onscroll = () => {
+function closeMenu() {
+    navbar.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    menuIcon.className = 'bx bx-menu';
+}
 
+menuBtn.addEventListener('click', () => {
+    const open = navbar.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuIcon.className = open ? 'bx bx-x' : 'bx bx-menu';
+});
+
+navbar.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+
+// Highlight the active link while scrolling
+const sections = document.querySelectorAll('section[id]');
+const links = document.querySelectorAll('.navbar a');
+
+function setActive() {
+    const y = window.scrollY + 140;
     sections.forEach(sec => {
-
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute("id");
-
-        if (top >= offset && top < offset + height) {
-
-            navLinks.forEach(link => {
-                link.classList.remove("active");
-            });
-
-            let activeLink = document.querySelector(
-                '.navbar a[href*="' + id + '"]'
-            );
-
-            if (activeLink) {
-                activeLink.classList.add("active");
-            }
+        if (y >= sec.offsetTop && y < sec.offsetTop + sec.offsetHeight) {
+            links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + sec.id));
         }
     });
-};
+}
 
-
-// =========================
-// TYPED JS EFFECT
-// =========================
-
-var typed = new Typed(".multiple-text", {
-    strings: [
-        "Full Stack Developer",
-        "MERN Stack Developer",
-        "Frontend Developer",
-        "Backend Developer",
-        "Software Engineer",
-        "C++ Programmer"
-    ],
-    typeSpeed: 100,
-    backSpeed: 80,
-    backDelay: 1500,
-    loop: true
-});
+window.addEventListener('scroll', setActive, { passive: true });
+setActive();
